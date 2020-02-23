@@ -1,10 +1,12 @@
 const container = document.querySelector(".container");
 const coffees = [{
   name: "Perspiciatis",
-  image: "images/coffee1.jpg"
+  image: "images/coffee1.jpg",
+  url: "https://www.youtube.com/"
 }, {
   name: "Voluptatem",
-  image: "images/coffee2.jpg"
+  image: "images/coffee2.jpg",
+  url: "https://cursos.erickwendel.com/courses/448292/lectures/8539753"
 }, {
   name: "Explicabo",
   image: "images/coffee3.jpg"
@@ -33,13 +35,14 @@ const showCoffees = () => {
   coffees.forEach(
     ({
       name,
-      image
+      image,
+      url
     }) =>
     (output += `
         <div class="card">
           <img class="card--image" src=${image} />
           <h1 class="card--title">${name}</h1>
-          <a class="card--link" href="#">Taste</a>
+          <a class="card--link" href=${url}>${name}</a>
         </div>
       `)
   )
