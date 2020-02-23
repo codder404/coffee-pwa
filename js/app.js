@@ -50,3 +50,12 @@ const showCoffees = () => {
 }
 
 document.addEventListener("DOMContentLoaded", showCoffees)
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registerd"))
+      .catch(err => console.log("service worker not resgisterd", err));
+  })
+}
