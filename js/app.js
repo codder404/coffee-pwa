@@ -37,7 +37,7 @@ const showCoffees = () => {
     }) =>
     (output += `
         <div class="card">
-          <img class="card--avatar" src=${image} />
+          <img class="card--image" src=${image} />
           <h1 class="card--title">${name}</h1>
           <a class="card--link" href="#">Taste</a>
         </div>
