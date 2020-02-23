@@ -54,7 +54,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   width: 15rem auto;
-  height: 1rem;
+  height: 15rem;
   background: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 60px 6px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
@@ -78,7 +78,8 @@ h1 {
 
 .card--link {
   text-decoration: none;
-  background: #fff;
+  background: #db4938;
+  color: #fff;
   padding: 0.3rem 1rem;
-  border-radius: 20px;
+  border-radius: 5px;
 }
